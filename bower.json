@@ -1,6 +1,0 @@
-{
-    "dependencies": {
-        "ispy-online":"latest"
-    },
-    "name": "invenio-previewer-ispy"
-}
