@@ -46,6 +46,7 @@ js = Bundle(
     filters="requirejs",
     weight=51,
     bower={
+      "ispy-online": "latest"
     }
 )
 
