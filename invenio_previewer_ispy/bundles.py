@@ -58,7 +58,6 @@ styles = Bundle(
     "vendors/ispy-online/css/range-selection.css",
     "vendors/ispy-online/css/event-browser.css",
     "vendors/ispy-online/css/speed-test.css",
-    "vendors/font-awesome/css/font-awesome.min.css",
   output="previewer_ispy.css",
     filters="cleancss",
     weight=51
