@@ -38,7 +38,7 @@ js = Bundle(
     "vendors/ispy-online/js/data-description.js",
     "vendors/ispy-online/js/eventdisplay.js",
     "vendors/ispy-online/js/about.js",
-    "vendors/ispy-online/js/event-browser.js",
+    "vendors/ispy-online/js/event-loader.js",
     "vendors/ispy-online/js/range-selection.js",
     "vendors/ispy-online/js/settings.js",
     "vendors/ispy-online/js/speed-test.js",
