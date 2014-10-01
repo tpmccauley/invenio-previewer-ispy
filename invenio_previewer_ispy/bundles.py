@@ -24,7 +24,6 @@ from invenio.ext.assets import Bundle
 
 js = Bundle(
     "js/previewer/ispy/init.js",
-    "vendors/ispy-online/js/jszip.min.js",
     "vendors/ispy-online/js/elab.js",
     "vendors/ispy-online/js/utils.js",
     "vendors/ispy-online/js/flexcroll.js",
