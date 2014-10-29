@@ -17,22 +17,11 @@
 ## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 #}
 
-{# ReclineJS multiview for viewing csv files #}
+{#- ISpy Previewer base template -#}
 
-{% extends "previewer/preview.html" %}
+{%- extends "previewer/preview.html" -%}
 
 {% bundles "previewer_ispy.js", "previewer_ispy.css" %}
-
-{%- block head %}
-{# This is an example how to add something to head section.
-
-  {{ super() }}
-  <link rel="stylesheet" type="text/css"
-        href="{{ url_for("static", filename="vendors/jquery-ui/themes/base/theme.css") }}"/>
-  <link rel="stylesheet" type="text/css"
-        href="{{ url_for("static", filename="vendors/jquery-ui/themes/base/datepicker.css") }}"/>
-#}
-{% endblock head %}
 
 {% block body %}
 <table>
@@ -230,7 +219,7 @@
 			This is a browser-based event display for the <a target="edabout" href="http://cern.ch/cms">CMS experiment</a> at the LHC.
 			</p>
 			<p>
-			This software is part of the <a target="edabout" href="http://www.i2u2.org">I2U2</a> project, 
+			This software is part of the <a target="edabout" href="http://www.i2u2.org">I2U2</a> project,
 			which is published under the <a target="edabout" href="http://fermitools.fnal.gov/about/terms.html">Fermitools License</a>.
 			</p>
 			<p>
@@ -308,4 +297,11 @@
 </table>
 </div>
 
+{% endblock %}
+
+{% block javascript %}
+  {{ super() }}
+  <script type="text/javascript">
+    loadIg("{{ f.url }}");
+  </script>
 {% endblock %}

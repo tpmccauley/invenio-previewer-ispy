@@ -23,8 +23,7 @@ from invenio.ext.assets import Bundle
 
 
 js = Bundle(
-    "js/previewer/ispy/init.js",
-    "vendors/ispy-online/js/jszip.min.js",
+    "vendors/jszip/dist/jszip.min.js",
     "vendors/ispy-online/js/elab.js",
     "vendors/ispy-online/js/utils.js",
     "vendors/ispy-online/js/flexcroll.js",
@@ -42,8 +41,9 @@ js = Bundle(
     "vendors/ispy-online/js/range-selection.js",
     "vendors/ispy-online/js/settings.js",
     "vendors/ispy-online/js/speed-test.js",
+    # "js/previewer/ispy/init.js",
     output="previewer_ispy.js",
-    filters="requirejs",
+    # filters="requirejs",
     weight=51,
     bower={
       "ispy-online": "latest"
