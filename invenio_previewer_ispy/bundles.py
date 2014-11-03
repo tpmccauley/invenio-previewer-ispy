@@ -43,7 +43,7 @@ js = Bundle(
     "vendors/ispy-online/js/speed-test.js",
     # "js/previewer/ispy/init.js",
     output="previewer_ispy.js",
-    # filters="requirejs",
+    filters="requirejs",
     weight=51,
     bower={
       "ispy-online": "latest"
