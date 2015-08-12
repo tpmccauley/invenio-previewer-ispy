@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio-Previewer-ISPY
-# Copyright (C) 2014 CERN
+# Copyright (C) 2014, 2015 CERN
 #
 # Invenio-Previewer-ISPY is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
@@ -14,10 +14,11 @@
 # General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with Invenio-Previewer-ISPY; if not, write to the Free Software Foundation,
-# Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+# along with Invenio-Previewer-ISPY; if not, write to the Free
+# Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
+# 02111-1307, USA.
 
-"""Setup script for invenio_previewer_ispy package."""
+"""Invenio previewer for ISPY visualisations."""
 
 try:
     from setuptools import setup
@@ -51,9 +52,9 @@ with open(os.path.join('invenio_previewer_ispy', 'version.py'), 'rt') as f:
     ).group('version')
 
 setup(
-    name='Invenio-Previewer-ISPY',
+    name='invenio-previewer-ispy',
     version=version,
-    description='Invenio previewer extension for ISPY visualization tool.',
+    description=__doc__,
     long_description=readme + '\n\n' + history,
     keywords='invenio-previewer-ispy',
     license='GPLv2',
